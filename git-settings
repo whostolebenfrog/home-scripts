@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Just a quick script to load git defaults
+
+git config --global user.name "Ben Griffiths"
+git config --global user.email "benjamin.griffiths@microsoft.com"
+
+git config --global color.ui "true"
+git config --global core.editor "vim"
+git config --global merge.tool "vimdiff"
+
+git config --global alias.st "status"
+git config --global alias.ss "status -s"
+git config --global alias.aa '!git add -u && git add . && git status'
+git config --global alias.ap "add -p"
+git config --global alias.co "checkout"
+git config --global alias.df "diff"
+git config --global alias.lg "log --graph --pretty=format:'%C(bold red)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold green)<%an>%Creset' --abbrev-commit --date=relative"
+git config --global alias.cm "commit --verbose"
+git config --global alias.ca "commit -a --verbose"
+git config --global alias.am "commit --amend"
+git config --global alias.ph "push"
+git config --global alias.ft "fetch"
+git config --global alias.pl "pull"
+git config --global alias.pr "pull --rebase"
